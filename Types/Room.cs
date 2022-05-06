@@ -1,8 +1,8 @@
 ﻿/**
- *   Copyright (C) 2021 okaygo
+ *   Copyright (C) 2021-2022
  *
- *   https://github.com/misterokaygo/MapAssist/
- *
+ *   https://github.com/OneXDeveloper/MapAssist/
+ *  
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
@@ -20,8 +20,6 @@
 using MapAssist.Helpers;
 using MapAssist.Interfaces;
 using System;
-using System.Linq;
-using System.Collections.Generic;
 
 namespace MapAssist.Types
 {

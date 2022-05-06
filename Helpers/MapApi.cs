@@ -1,8 +1,8 @@
 ﻿/**
- *   Copyright (C) 2021 okaygo
+ *   Copyright (C) 2021-2022
  *
- *   https://github.com/misterokaygo/MapAssist/
- *
+ *   https://github.com/OneXDeveloper/MapAssist/
+ *  
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
@@ -158,7 +158,7 @@ namespace MapAssist.Helpers
                 if (File.Exists(gamePath))
                 {
                     var fileChecksum = Files.Checksum.FileChecksum(gamePath);
-                    foreach(KeyValuePair<string, uint> kvp in GameCRC32)
+                    foreach (KeyValuePair<string, uint> kvp in GameCRC32)
                     {
                         var allowedChecksum = kvp.Value;
                         if (fileChecksum == allowedChecksum)
@@ -167,7 +167,8 @@ namespace MapAssist.Helpers
                             return true;
                         }
                     }
-                } else
+                }
+                else
                 {
                     gamePath = Path.Combine(path, "storm.dll");
                     if (File.Exists(gamePath))

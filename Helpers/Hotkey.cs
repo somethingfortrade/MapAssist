@@ -1,9 +1,27 @@
-﻿using System;
+﻿/**
+ *   Copyright (C) 2021-2022
+ *
+ *   https://github.com/OneXDeveloper/MapAssist/
+ *  
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ **/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MapAssist.Helpers
@@ -55,7 +73,7 @@ namespace MapAssist.Helpers
             {
                 control.Text = e.Modifiers.ToString().Replace(", ", " + ").Replace("Control", "Ctrl");
             }
-            else if(e.Modifiers == Keys.None)
+            else if (e.Modifiers == Keys.None)
             {
                 control.Text = FormatKey(e.KeyCode);
             }
@@ -65,7 +83,7 @@ namespace MapAssist.Helpers
 
                 control.Text = e.Modifiers.ToString().Replace(", ", " + ").Replace("Control", "Ctrl") + " + " + FormatKey(e.KeyCode);
             }
-  
+
             e.Handled = true;
         }
 
@@ -157,7 +175,7 @@ namespace MapAssist.Helpers
         };
 
         private static Dictionary<string, Keys> keyLookup = textLookup.ToDictionary(x => x.Value, x => x.Key);
-                
+
         public static bool operator ==(Hotkey a, Hotkey b)
         {
             if (a is null)

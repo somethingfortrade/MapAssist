@@ -1,8 +1,8 @@
 ﻿/**
- *   Copyright (C) 2021 okaygo
+ *   Copyright (C) 2021-2022
  *
- *   https://github.com/misterokaygo/MapAssist/
- *
+ *   https://github.com/OneXDeveloper/MapAssist/
+ *  
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
@@ -18,7 +18,6 @@
  **/
 
 using GameOverlay.Drawing;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -130,7 +129,7 @@ namespace MapAssist.Types
                     .ToDictionary(k => k.gameObject, v => v.positions)
             };
         }
-    
+
         private int[][] GetCollisionGid(int padding = 0)
         {
             var mapRows = new int[crop.y1 - crop.y0][];

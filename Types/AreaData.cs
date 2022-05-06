@@ -1,8 +1,8 @@
 ﻿/**
- *   Copyright (C) 2021 okaygo
+ *   Copyright (C) 2021-2022
  *
- *   https://github.com/misterokaygo/MapAssist/
- *
+ *   https://github.com/OneXDeveloper/MapAssist/
+ *  
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
@@ -104,13 +104,13 @@ namespace MapAssist.Types
                 ViewOutputRect = points.Select(point => point.Subtract(ViewInputRect.Left + ViewInputRect.Width / 2, ViewInputRect.Top + ViewInputRect.Height / 2).Rotate(angleRadians)).ToArray().ToRectangle(1);
             }
         }
-    
+
         public bool IncludesPoint(Point point)
         {
             var adjPoint = point.Subtract(Origin);
-            return adjPoint.X > 0 && 
-                adjPoint.Y > 0 && 
-                adjPoint.X < ViewInputRect.Width - MapPadding * 2 && 
+            return adjPoint.X > 0 &&
+                adjPoint.Y > 0 &&
+                adjPoint.X < ViewInputRect.Width - MapPadding * 2 &&
                 adjPoint.Y < ViewInputRect.Height - MapPadding * 2;
         }
     }

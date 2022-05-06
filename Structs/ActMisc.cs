@@ -1,8 +1,8 @@
 ﻿/**
- *   Copyright (C) 2021 okaygo
+ *   Copyright (C) 2021-2022
  *
- *   https://github.com/misterokaygo/MapAssist/
- *
+ *   https://github.com/OneXDeveloper/MapAssist/
+ *  
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
@@ -17,9 +17,9 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  **/
 
+using MapAssist.Types;
 using System;
 using System.Runtime.InteropServices;
-using MapAssist.Types;
 
 namespace MapAssist.Structs
 {

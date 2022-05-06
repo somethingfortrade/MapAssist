@@ -1,8 +1,8 @@
 ﻿/**
- *   Copyright (C) 2021 okaygo
+ *   Copyright (C) 2021-2022
  *
- *   https://github.com/misterokaygo/MapAssist/
- *
+ *   https://github.com/OneXDeveloper/MapAssist/
+ *  
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
@@ -25,7 +25,8 @@ namespace MapAssist.Structs
     [StructLayout(LayoutKind.Explicit)]
     public struct UnitHashTable
     {
-        [FieldOffset(0x00)] [MarshalAs(UnmanagedType.ByValArray, SizeConst = 128)]
+        [FieldOffset(0x00)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 128)]
         public IntPtr[] UnitTable;
     }
 }

@@ -1,8 +1,8 @@
 ﻿/**
- *   Copyright (C) 2021 okaygo
+ *   Copyright (C) 2021-2022
  *
- *   https://github.com/misterokaygo/MapAssist/
- *
+ *   https://github.com/OneXDeveloper/MapAssist/
+ *  
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
@@ -52,7 +52,7 @@ namespace MapAssist.Settings
 
         [YamlMember(Alias = "AuthorizedWindowTitles", ApplyNamingConventions = false)]
         public string[] AuthorizedWindowTitles { get; set; } = new string[] { };
-        
+
         [YamlMember(Alias = "RenderingConfiguration", ApplyNamingConventions = false)]
         public RenderingConfiguration RenderingConfiguration { get; set; }
 
@@ -172,25 +172,25 @@ namespace MapAssist.Settings
 
         [YamlMember(Alias = "MissileFireLarge", ApplyNamingConventions = false)]
         public IconRendering MissileFireLarge { get; set; }
-        
+
         [YamlMember(Alias = "MissileFireSmall", ApplyNamingConventions = false)]
         public IconRendering MissileFireSmall { get; set; }
-        
+
         [YamlMember(Alias = "MissileIceLarge", ApplyNamingConventions = false)]
         public IconRendering MissileIceLarge { get; set; }
-        
+
         [YamlMember(Alias = "MissileIceSmall", ApplyNamingConventions = false)]
         public IconRendering MissileIceSmall { get; set; }
-        
+
         [YamlMember(Alias = "MissileLightLarge", ApplyNamingConventions = false)]
         public IconRendering MissileLightLarge { get; set; }
-        
+
         [YamlMember(Alias = "MissileLightSmall", ApplyNamingConventions = false)]
         public IconRendering MissileLightSmall { get; set; }
-        
+
         [YamlMember(Alias = "MissilePoisonLarge", ApplyNamingConventions = false)]
         public IconRendering MissilePoisonLarge { get; set; }
-        
+
         [YamlMember(Alias = "MissilePoisonSmall", ApplyNamingConventions = false)]
         public IconRendering MissilePoisonSmall { get; set; }
 

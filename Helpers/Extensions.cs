@@ -1,8 +1,8 @@
 ﻿/**
- *   Copyright (C) 2021 okaygo, OneXDeveloper
+ *   Copyright (C) 2021-2022
  *
- *   https://github.com/misterokaygo/MapAssist/
- *
+ *   https://github.com/OneXDeveloper/MapAssist/
+ *  
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
  *  the Free Software Foundation, either version 3 of the License, or
@@ -17,21 +17,20 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  **/
 
-using System;
-using System.Linq;
-using System.Numerics;
-using System.Runtime.InteropServices;
 using MapAssist.Types;
 using SharpDX;
 using SharpDX.Direct2D1;
 using SharpDX.Mathematics.Interop;
+using System;
+using System.Linq;
+using System.Numerics;
+using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
+using Color = GameOverlay.Drawing.Color;
 using Geometry = GameOverlay.Drawing.Geometry;
 using Graphics = GameOverlay.Drawing.Graphics;
 using Point = GameOverlay.Drawing.Point;
 using Rectangle = GameOverlay.Drawing.Rectangle;
-using Color = GameOverlay.Drawing.Color;
-using GraphicsWindow = GameOverlay.Windows.GraphicsWindow;
 using SystemBitmap = System.Drawing.Bitmap;
 using SystemColor = System.Drawing.Color;
 using SystemImaging = System.Drawing.Imaging;
@@ -46,7 +45,7 @@ namespace MapAssist.Helpers
         // Math
         public static Point Subtract(this Point point, float offset) => point.Subtract(offset, offset);
         public static Point Subtract(this Point point, Point offset) => point.Subtract(offset.X, offset.Y);
-        
+
         public static Point Subtract(this Point point, float x, float y)
         {
             return new Point(point.X - x, point.Y - y);
